@@ -63,7 +63,7 @@
 
 - (BOOL)_loadFrameworkWithinFolderAtPath:(NSString *)folderPath
 {
-    NSString *frameworkPath = [folderPath stringByAppendingPathComponent:@"DLOpenFramework.framework"];
+    NSString *frameworkPath = [folderPath stringByAppendingPathComponent:@"Frameworks/DLOpenFramework.framework"];
     if (![[NSFileManager defaultManager] fileExistsAtPath:frameworkPath]) {
         return NO;
     }
